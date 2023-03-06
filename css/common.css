@@ -31,7 +31,31 @@ html,body{ -webkit-tap-highlight-color: transparent;width:100%;height:100%; }/*�
 .hand{cursor:pointer;transition:all .6s;}
 
 
+.part1_banner{height: 11.9rem;    position: relative;}
+.part1_main{height: 100%;}
+.part1_main_content{    height: 100%;
+    background-size: cover;
+    background-position: 50%;
+    background-position-x: 50%;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;}
+.part1_main_content_center{    height: 100%;}
+.part1_main_content_center_img{left: 50%;    position: absolute;
+    top: 0rem; margin-left: -3.75rem;
+    width: 7.5rem;
+    height: 11.9rem;
+    transform: rotate(0deg) scale(1, 1);}
 
+
+.part1_main_content_center_img01{    height: 100%;}
+
+.part1_main_content_center_img01 img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
 /*header包名*/
 .icon_top{width:7.5rem;margin:0 auto;height:0.96rem}
 .icon_top img{width:7.5rem;height:0.96rem}
