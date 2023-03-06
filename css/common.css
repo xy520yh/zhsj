@@ -127,7 +127,7 @@ span.down{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 #gotop{display:none;position:fixed;right:1%;bottom:0.2rem;padding:0.1rem 0.1rem;font-size:0.2rem;background:#777;color:white;cursor:pointer;z-index:11111}
 #notice{font-size:0.14rem} */
 
-/* .float-bricks {
+.float-bricks {
     pointer-events: none;
 }
 .float-frame_e4927 {
@@ -169,4 +169,4 @@ div.brick-button_ea982 .text-ellipsis_5e241 {
     overflow: hidden;
     text-overflow: ellipsis;font-size: 0.426667rem;
     white-space: nowrap;
-} */
+} 
