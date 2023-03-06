@@ -127,4 +127,46 @@ span.down{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 #gotop{display:none;position:fixed;right:1%;bottom:0.2rem;padding:0.1rem 0.1rem;font-size:0.2rem;background:#777;color:white;cursor:pointer;z-index:11111}
 #notice{font-size:0.14rem} */
 
+.float-bricks {
+    pointer-events: none;
+}
+.float-frame_e4927 {
+width: 9.33333rem;
+height: 1.12rem;
+left: 0.333333rem;
+bottom: 0rem;
+position: fixed;
+margin-bottom: env(safe-area-inset-bottom);
+}
+.frame-event_70026 {
+    height: 100%;
+}
 
+div.brick-button_ea982, div.brick-button_ea982 .button-content_8b431 {
+    display: flex;    height: 100%;
+    border-style: solid;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+}
+
+.brick-button_ea982 div {
+    font-size: .37333333rem;
+    font-family: Arial,sans-serif;
+    line-height: 1.5;
+}
+
+div.brick-button_ea982 .button-icon_62244 {
+    margin-right: 0.10666667rem;
+    flex: 0 0 auto;    width: 0.469333rem;
+    height: 0.469333rem;
+}
+
+
+
+
+div.brick-button_ea982 .text-ellipsis_5e241 {
+    overflow: hidden;
+    text-overflow: ellipsis;font-size: 0.426667rem;
+    white-space: nowrap;
+}
