@@ -31,7 +31,7 @@ html,body{ -webkit-tap-highlight-color: transparent;width:100%;height:100%; }/*�
 .hand{cursor:pointer;transition:all .6s;}
 
 
-.part1_banner{height: 11.9rem;    position: relative;}
+.part1_banner{height: 10.6rem;    position: relative;}
 .part1_main{height: 100%;}
 .part1_main_content{    height: 100%;
     background-size: cover;
@@ -45,7 +45,7 @@ html,body{ -webkit-tap-highlight-color: transparent;width:100%;height:100%; }/*�
 .part1_main_content_center_img{left: 50%;    position: absolute;
     top: 0rem; margin-left: -3.75rem;
     width: 7.5rem;
-    height: 11.9rem;
+    height: 10.6rem;
     transform: rotate(0deg) scale(1, 1);}
 
 
@@ -57,11 +57,15 @@ html,body{ -webkit-tap-highlight-color: transparent;width:100%;height:100%; }/*�
     height: 100%;
 }
 /*header包名*/
-.icon_top{width:7.5rem;margin:0 auto;height:0.96rem}
-.icon_top img{width:7.5rem;height:0.96rem}
+.icon_top{width:7.5rem;margin:0 auto;height:1.2rem}
+.icon_top img{width:7.5rem;height:1.2rem}
 /*part1_banner*/
 .page_banner{height:11.9rem}
 .page_1{background:url(../images/part1_banner.gif) no-repeat;width:7.5rem;height:100%;background-size:cover;background-position:center;margin:0 auto;position:relative}
+
+
+
+.part3{background:url(../images/part23_bg.jpg) no-repeat;width:7.5rem;height:19.7rem;background-size:cover;background-position:center;margin:0 auto;position:relative;margin-top: -0.01rem;}
 /*part2自由标题*/
 .page_2{width:7.5rem;margin:0 auto;height:4.9rem}
 .page_2 img{width:7.5rem;height:4.9rem}
@@ -76,40 +80,43 @@ html,body{ -webkit-tap-highlight-color: transparent;width:100%;height:100%; }/*�
 span.down{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .button-icon_62244{margin-right:0.1rem;flex:0 0 auto}
 /*轮播*/
-.page_3{background:url(../images/index_bottom_bg2.jpg) no-repeat;width:7.5rem;height:7.94rem;margin:0 auto}
-.mainShow3{width:7.5rem;margin:0 auto;position:relative;height:7.94rem}
+.page_3{background:url(../images/part3_bg.jpg) no-repeat;width:7.5rem;height:7.19rem;margin:0 auto}
+.mainShow3{width:7.5rem;margin:0 auto;position:relative;height:7.5rem;}
 .swipera{width:6.75rem;height:3.8rem;position:absolute;top:1.14rem;left:0.375rem;z-index:1;border-radius:0.1rem}
 .swipera .swiper-slide img{width:6.4rem;height:3.6rem}
 .swipera .swiper-pagination-bullet{width:0.38rem;height:0.38rem;display:inline-block;background:url(../images/ico.png);background-size:100% 100%;margin-right:0.15rem;opacity:1}
 .swipera .swiper-pagination-bullet-active{width:0.38rem;height:0.38rem;background:url(../images/ico_active.png);background-size:100% 100%}
 .swipera .swiper-pagination{position:absolute;width:2.9rem;left:50%;margin-left:-1.5rem;top:4.15rem;text-align:center;transition:.3s opacity;transform:translate3d(0,0,0);z-index:10}
 /*切换*/
-.slide6{background-image:url(../images/part6_role_bg.jpg)}
-.part{width:7.5rem;height:13.34rem;background-repeat:no-repeat;background-position:center center;background-size:cover;position:relative;min-height:13.34rem;margin:0 auto;}
-.main_show{width:7.5rem;position:relative;margin:0 auto;height:13.34rem}
-.game_roles{width:750px;position:absolute;bottom:0px;height:100%}
-.game_roles .swiper-slide{width:640px;height:100vh;position:relative}
-.game_roles .swiper_dock_list{width:7.5rem;height:2.19rem;background:url(../images/part6_ico_bg.png) no-repeat;z-index:10;position:absolute;left:0px;bottom:10px;background-size:100% 100%}
-.game_roles .swiper_dock_list li:nth-child(1),.game_roles .swiper_dock_list li:nth-child(2),.game_roles .swiper_dock_list li:nth-child(3),.game_roles .swiper_dock_list li:nth-child(4){width:1.8rem;height:1.92rem;cursor:pointer}
-.game_roles .swiper_dock_list li:nth-child(1){position:absolute;top:0.02rem;left:0.37rem}
-.game_roles .swiper_dock_list li:nth-child(2){position:absolute;top:0.02rem;left:2.06rem}
-.game_roles .swiper_dock_list li:nth-child(3){position:absolute;top:0.02rem;left:3.76rem}
-.game_roles .swiper_dock_list li:nth-child(4){position:absolute;top:0.02rem;left:5.43rem}
-.game_roles .swiper_dock_list li img{display:none;width:auto;height:1.92rem}
-.game_roles .swiper_dock_list li .icon.on{display:block}
-.role_info  img{width:7.5rem;height:13.34rem}
 
-.role_info{position:absolute;top:0rem;left:0rem;z-index:1000;width:7.5rem;height:13.34rem;opacity:0;-webkit-transform:translate(-100%,0);transform:translate(-100%,0);-webkit-transition:all 0.3s;transition:all 0.3s;z-index:99}
-.role_img{position:absolute;top:0rem;opacity:0;width:7.5rem;height:13.34rem;-webkit-transform:translate(100%,0);transform:translate(100%,0);-webkit-transition:all 0.3s;transition:all 0.3s}
-.role_img1{background:url(../images/part6_roleimg_xz.png) center top no-repeat;background-size:100% 100%;width:7.5rem;height:13.34rem}
-.role_img2{background:url(../images/part6_roleimg_gj.png) center top no-repeat;background-size:100% 100%;width:7.5rem;height:13.34rem}
-.role_img3{background:url(../images/part6_roleimg_gjs.png) center top no-repeat;background-size:100% 100%;width:7.5rem;height:13.34rem}
-.role_img4{background:url(../images/part6_roleimg_zs.png) center top no-repeat;background-size:100% 100%;width:7.5rem;height:13.34rem}
+.part{width:7.5rem;height:12.51rem;background-repeat:no-repeat;background-position:center center;background-size:cover;position:relative;min-height:12.51rem;margin:0 auto;}
+.main_show{width:7.5rem;position:relative;margin:0 auto;height:12.85rem;}
+.game_roles{width:7.5rem;position:absolute;bottom:0px;height:100%}
+.game_roles .swiper-slide{width:7.5rem;height:12.85rem;position:relative}
+.game_roles .swiper_dock_list{width:7.5rem;height:2.84rem;background:url(../images/part6_ico_bg.png) no-repeat;z-index:10;position:absolute;left:0rem;bottom:0rem;background-size:100% 100%}
+.game_roles .swiper_dock_list li:nth-child(1),.game_roles .swiper_dock_list li:nth-child(2),.game_roles .swiper_dock_list li:nth-child(3),.game_roles .swiper_dock_list li:nth-child(4){width:1.8rem;height:1.92rem;cursor:pointer}
+.game_roles .swiper_dock_list li:nth-child(1){position:absolute;top:0.02rem;left:0.17rem}
+.game_roles .swiper_dock_list li:nth-child(2){position:absolute;top:0.02rem;left:1.96rem}
+.game_roles .swiper_dock_list li:nth-child(3){position:absolute;top:0.02rem;left:3.7rem}
+.game_roles .swiper_dock_list li:nth-child(4){position:absolute;top:0.02rem;left:5.53rem}
+.game_roles .swiper_dock_list li img{display:none;width:1.75rem;height:2.74rem}
+.game_roles .swiper_dock_list li .icon.on{display:block}
+.role_info  img{width:7.5rem;height:12.85rem}
+
+.role_info{position:absolute;top:0rem;left:0rem;z-index:1000;width:7.5rem;height:12.85rem;opacity:0;-webkit-transform:translate(-100%,0);transform:translate(-100%,0);-webkit-transition:all 0.3s;transition:all 0.3s;z-index:99}
+.role_img{position:absolute;top:0rem;opacity:0;width:7.5rem;height:12.85rem;-webkit-transform:translate(100%,0);transform:translate(100%,0);-webkit-transition:all 0.3s;transition:all 0.3s}
+.role_img1{background:url(../images/part6_roleimg_xz.png) center top no-repeat;background-size:100% 100%;width:7.5rem;height:12.85rem}
+.role_img2{background:url(../images/part6_roleimg_gj.png) center top no-repeat;background-size:100% 100%;width:7.5rem;height:12.85rem}
+.role_img3{background:url(../images/part6_roleimg_gjs.png) center top no-repeat;background-size:100% 100%;width:7.5rem;height:12.85rem}
+.role_img4{background:url(../images/part6_roleimg_zs.png) center top no-repeat;background-size:100% 100%;width:7.5rem;height:12.85rem}
 .game_roles .swiper-slide-active .role_info{-webkit-transform:translate(0,0);transform:translate(0,0);-webkit-transition:all 0.3s;transition:all 0.3s;opacity:1}
 .game_roles .swiper-slide-active .role_img{opacity:1;-webkit-transform:translate(0,0);transform:translate(0,0);-webkit-transition:all 0.3s;transition:all 0.3s}
 
 
 
+
+.part3_gif{position: absolute;top:2.55rem;left:0.55rem;}
+.part3_mask{position: absolute;top:2.5rem;left:0.5rem;}
 /* 
 .nav_box{z-index:33333;width:100%;height:2.13rem;display:flex;flex-flow:column nowrap;justify-content:space-between;align-items:center;position:absolute;top:0.35rem;left:0;text-align:center;z-index:1;-webkit-transition:all 1s ease-in-out;transition:all 1s ease-in-out}
 .nav_box div a{color:#fff}
@@ -126,7 +133,7 @@ span.down{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 
 #gotop{display:none;position:fixed;right:1%;bottom:0.2rem;padding:0.1rem 0.1rem;font-size:0.2rem;background:#777;color:white;cursor:pointer;z-index:11111}
 #notice{font-size:0.14rem} */
-
+/* 
 .float-bricks {
     pointer-events: none;
 }
@@ -169,4 +176,4 @@ div.brick-button_ea982 .text-ellipsis_5e241 {
     overflow: hidden;
     text-overflow: ellipsis;font-size: 0.426667rem;
     white-space: nowrap;
-} 
+}  */

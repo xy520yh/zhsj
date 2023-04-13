@@ -1,23 +1,34 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8">
-    <title>国内圣境</title>
-    <meta name="keywords" content="">
-    <meta name="description" content="">
-    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
-    <meta http-equiv="Pragma" content="no-cache" />
-    <meta http-equiv="Expires" content="0" />
+	<meta charset="utf-8">
     <meta content="yes" name="apple-mobile-web-app-capable" />
     <meta content="black" name="apple-mobile-web-app-status-bar-style" />
     <meta content="telephone=no" name="format-detection" />
     <meta content="email=no" name="format-detection" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover"/>
-    <!--maincss-->
-    <link rel="stylesheet" href="css/swiper.min.css" type="text/css" media="screen">
-    <link rel="stylesheet" href="css/common.css" type="text/css" media="screen" />
-    <script>
-        var phoneWidth =  parseInt(window.screen.width);
+    <title>《斜槓勇者》事前預約開放中！潮流系放置捲軸手遊！挑戰你的多重冒險新人生！</title>
+    <meta name="keywords" content="斜槓勇者,手機遊戲,手遊,遊戲,事前登錄,事前預約,預約,橫向捲軸,放置">
+    <meta name="description" content="《斜槓勇者》開啟你的勇者冒險日記！打造全新斜槓人生！就是這麼好玩！ ">
+    <!--FB meta og: FB分享貼文-->
+    <meta name="og:description" content="《斜槓勇者》開啟你的勇者冒險日記！打造全新斜槓人生！就是這麼好玩"/>
+    <meta property="og:site_name" content="《斜槓勇者》事前預約開放中！潮流系放置捲軸手遊！挑戰你的多重冒險新人生！"/>
+    <meta property="og:title" content="立即預約送限量時裝和自拍架，再抽PS5和萬元現金！"/>
+    <meta property=“og:url” content="(需更換成玩家分享的專屬網址)"/>
+    <meta property="og:image" content="(需更換為FB分享圖片隨機3張)"/>
+    <link rel="shortcut icon" href="favicon.ico" />
+	<link rel="stylesheet" href="css/phone_main.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
+    <script type="text/javascript"  src="js/swiper.min.js"></script>
+    <script type="text/javascript" src="js/lunbo_index.js"></script>
+    <script src="js/headroom1.js"></script> 
+	<!--浏览器兼容HTML5标签-->
+	<!--[if lt IE 9]>
+		<script type="text/javascript" src="/js/html5.js"></script>
+	<![endif]-->
+	<!--移动端版本兼容 -->
+	<script type="text/javascript">
+		var phoneWidth =  parseInt(window.screen.width);
 		var phoneScale = phoneWidth/750;
 		var ua = navigator.userAgent;
 		if (/Android (\d+\.\d+)/.test(ua)){
@@ -30,195 +41,316 @@
 		} else {
 			document.write('<meta name="viewport" content="width=750, user-scalable=no, target-densitydpi=device-dpi">');
 		}
+	</script>
 
+<!-- Google Analytics代碼for斜槓勇者-->
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-194429494-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-194429494-2');  gtag('config', 'AW-377339352');
+</script>
+
+<!-- Facebook像素碼for斜槓勇者預約頁-->
+<!-- Facebook Pixel Code -->
+<script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '207572504577816');
+    fbq('track', 'PageView');
     </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=207572504577816&ev=PageView&noscript=1"
+    /></noscript>
 </head>
 <body>
-
-    <!--header包名-->
-    <div class="icon_top"><img src="images/icon_top.jpg"></div>
-    
-    <!--part1_banner-->
-
-    <div class="part1_banner">
-      <div class="part1_main">
-        <div class="part1_main_content">
-          <div class="part1_main_content_center">
-            <div class="part1_main_content_center_img">
-              <div class="part1_main_content_center_img01">
-                <img src="images/part1_banner.gif">
-                </div>
-            </div>
+<div id="wrapper">
+    <!--第一屏 --> 
+      <!--彈窗-->
+      <div class="masked" id="masked"></div>
+      <div class="tc_success" id="tc_succes"> 
+          <div class="girl"><img src="images/tc_img_06.png" alt=""></div>
+          <div class="girl_hand"><img src="images/tc_hand.png" alt=""></div>
+          <div class="tc_main">
+              <!--關閉按鈕-->
+              <div class="closed"><img src="images/tc_close.png" alt=""></div>
+              <div class="tc_tip"><img src="images/tc_img_03.png" alt=""></div>
+               <!--隐藏的gg按钮-->
+              <!-- <div class="tc_store">
+                <a href="https://lihi1.com/Q8F6n" target="_blank"><img src="images/tc_btn_android.png"/></a>
+             </div> -->
+              <div class="tc_store">
+                  <a href="https://lihi1.com/sYG0E" target="_blank"><img src="images/tc_btn_ios.png"/></a>
+              </div>
+              <div class="tc_sure">
+                  <a href="#"><img src="images/tc_btn_window.png"/> </a>
+              </div>
+       </div>   
+      </div>
+      
+       <!--header-->
+      <div class="wrap_header headroom"  id="header">
+          <div class="header_content">
+              <div class="header_ico"><img src="images/header_ico.png" alt=""></div>
+                 <!--隐藏的gg按钮-->
+              <!-- <div class="header_gg"> <a href="https://lihi1.com/Q8F6n" target="_blank"><img src="images/header_gg.png" alt=""></a></div> -->
+              <div class="header_gg"> <a href="https://lihi1.com/sYG0E" target="_blank"><img src="images/header_ios.png" alt=""></a></div>
+              <div class="header_fb"> <a href="https://www.facebook.com/SlashBrave.TW" target="_blank"><img src="images/header_fb.png" alt=""></a></div>
+              
           </div>
-        </div>
-      </div>
+      </div> 
+     <!--part1 -->  
+    <div class="part part1">
+        <div class="logo"><a  href="https://www.facebook.com/SlashBrave.TW" target="_blank"><img src="images/part1_logo.png"/></a></div>
+       <div class="btn-reservation"> <p>999999</p> </div>            
     </div>
+    <!--part2 -->  
+    <div class="part part2" id="pro2">
+        <div class="zan">
+            <!-- <p><img src="images/part2_booking_btn_FB_like.png"></p> -->
+            <p ><img src="images/fb_login.png"></p>
+        </div> 
+        <div class="info-box">
+            <select class="area" id="key-country" onchange="select()">
+            <option value="886">台灣+886</option>
+            <option value="852">香港+852</option>
+            <option value="853">澳門+853</option>
+            <!-- <option value="65">新加坡+65</option>
+            <option value="60">馬來西亞+60</option> -->
+            </select>
+            <input type="tel" class="input-in" oninput="value=value.replace(/[^\d]/g,'')" placeholder="(例：0930000000)" id="mobile" name="mobile">
+        </div>
+        <div class="login_btn sure_btn" id="sure_btn"><a href="javascript:void(0)"><img src="images/part2_booking_btn_01.png"></a></div>
+        <div class="chaxun_btn" id="five"><a href="#"><img src="images/part2_booking_btn_02.png"></a></div> 
+           <!--隐藏的gg按钮-->
+        <!-- <div class="part2_store">
+            <a href="https://lihi1.com/sYG0E" target="_blank"><img src="images/part2_gg.png"></a>
+        </div> -->
+        <div class="part2_store">
+            <a href="https://lihi1.com/Q8F6n" target="_blank"><img src="images/part2_ios.png"></a>
+        </div>
+       
+        <div class="part2_sd">
+            <a href="#" target="_blank"><img src="images/part2_sd.png"></a>
+        </div>   
+	</div>    
 
-    <!-- <div class="page_banner">
-        <div class="page_1">
-           <div class="nav_box">
-                <img src="images/cover_logo.png">
-            </div>
-            <div class="common_header">
-                <img src="images/sologen.png">
-            </div> 
-            <div class="register_btn animated pulse infinite sure_btn"><img src="images/btn_register.png"></div>   
+  
+  	<!--part3 -->  
+  	<div class="part part3" id="pro3">
+        <div class="ma_download2">
+            <a href="#">複製網址</a>
         </div>
-    </div> -->
-    <!--part2自由标题-->
-    <div class="page_2"> 
-        <img src="images/part2_title.gif">
+        <div class="input2">
+            <p class="text" >https://slash.rocketeer.com.tw/pre-order/?utm_source=12345678901234567890&amp;utm_medium=12345678901234567890&amp;utm_campaign=pre-order&amp;s-code=8b1a9953c4611296a827abf8c47804d7 </p>
+            <p   style="display: none;" class="img"><img src="images/fb_login.png"></p> 
+        </div>
+        <div class="da_cheng01"><img src="images/part3_invite_btn_invite_1_friend_yes.png"></div>
+        <div class="da_cheng02"><img src="images/part3_invite_btn_invite_1_friend_no.png"></div>
+        <div class="da_cheng03"><img src="images/part3_invite_btn_invite_1_friend_no.png"></div>
+        <div class="people_num"><p>目前已成功邀請 2 位朋友完成預約</p></div>
     </div>
-     <!--part3切换-->
-    <div class="page_03"> 
-        <img src="images/part3_tab1.gif">
+    <!--part4 -->
+    <div class="part part4" id="pro4">
+        <div class="part4_num"><p>655,986</p></div>
+        <div class="da_cheng01_line"><img src="images/part4_invite2_0w.png"></div>
     </div>
-     <!--part4切换-->
-    <div class="page_04"> 
-        <img src="images/part3_tab2.gif">
-    </div>
-    <div class="part slide6"> 
-        <div class="main_show">
-          <div class="game_roles">
-              <div class="swiper-container roles_wrap swiper-container-fade swiper-container-horizontal">
-                  <div class="swiper-wrapper" style="transition-duration: 0ms;"><div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active" data-swiper-slide-index="3" style="width: 750px; transition-duration: 0ms; opacity: 1; transform: translate3d(0px, 0px, 0px);">
-                        <div class="role_info ">
-                          <img src="images/part6_text_zs.png">
+     <!--part5 -->  
+    <div class="part part5" id="pro5">
+        <!-- <div class="swiper-slide slide7" data-hash="slide07">
+            <div class="slide7_main">
+                <div class="content">
+                    <div class="img">
+                        <div class="swiper-container box3">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <a href="#" data-url="http://www.youtube.com/embed/H9zBXsx6aQM">
+                                        <div class="img1">
+                                            <img src="images/banner1.jpg" alt="" />
+                                        </div>
+                                        <div class="abs">
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#" data-url="http://www.youtube.com/embed/H9zBXsx6aQM">
+                                        <div class="img1">
+                                        </div>
+                                        <div class="abs">
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#" data-url="http://www.youtube.com/embed/OeHb2WVWb5I">
+                                        <div class="img1">
+                                            <img src="images/banner1.jpg" alt="" />
+                                        </div>
+                                        <div class="abs">
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
                         </div>
-                        <div class="role_img4 role_img"></div>
-                      </div>
-                      <div class="swiper-slide swiper-slide-duplicate-next" data-swiper-slide-index="0" style="width: 750px; transition-duration: 0ms; opacity: 1; transform: translate3d(-750px, 0px, 0px);">
-                        <div class="role_info">
-                          <img src="images/part6_text_xz.png">
-                        </div>
-                        <div class="role_img1 role_img"></div>
-                      </div>
-                      <div class="swiper-slide" data-swiper-slide-index="1" style="width: 750px; transition-duration: 0ms; opacity: 1; transform: translate3d(-1500px, 0px, 0px);">
-                        <div class="role_info">
-                          <img src="images/part6_text_gj.png">
-                        </div>
-                        <div class="role_img2 role_img"></div>
-                      </div>
-                      <div class="swiper-slide swiper-slide-prev" data-swiper-slide-index="2" style="width: 750px; transition-duration: 0ms; opacity: 1; transform: translate3d(-2250px, 0px, 0px);">
-                        <div class="role_info">
-                          <img src="images/part6_text_gjs.png">
-                        </div>
-                        <div class="role_img3 role_img"></div>
-                      </div>
-                      <div class="swiper-slide swiper-slide-active" data-swiper-slide-index="3" style="width: 750px; transition-duration: 0ms; opacity: 1; transform: translate3d(-3000px, 0px, 0px);">
-                        <div class="role_info">
-                          <img src="images/part6_text_zs.png">
-                        </div>
-                        <div class="role_img4 role_img"></div>
-                      </div>
-                  <div class="swiper-slide swiper-slide-duplicate swiper-slide-next" data-swiper-slide-index="0" style="width: 750px; transition-duration: 0ms; opacity: 0; transform: translate3d(-3750px, 0px, 0px);">
-                        <div class="role_info">
-                          <img src="images/part6_text_xz.png">
-                        </div>
-                        <div class="role_img1 role_img"></div>
-                      </div></div>
-              </div>
-              <div class="dock_list">
-              <ul class="swiper_dock_list">
-                  <li> 
-                    <a href="javascript:void(0)"><img class="icon" src="images/part6_ico_hover1.png"></a>
-                  </li>
-                  <li>
-                    <a href="javascript:void(0)"><img class="icon" src="images/part6_ico_hover2.png"></a>
-                  </li>
-                  <li>
-                    <a href="javascript:void(0)"><img class="icon" src="images/part6_ico_hover3.png"></a>
-                  </li>
-                  <li>
-                    <a href="javascript:void(0)"><img class="icon on" src="images/part6_ico_hover4.png"></a>
-                  </li>
-              </ul>
-              </div>
-          </div>   
-      </div>
-    </div>
-    <div class="page_3">
-        <div class="mainShow3 cf">  
-            <div class="swipera cf">
-                <div class="swiper-container img_swiper">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide"><img src="images/banner1.gif"></div>
-                        <div class="swiper-slide"><img src="images/banner2.jpg"></div>
-                        <div class="swiper-slide"><img src="images/banner3.jpg"></div>
-                        <div class="swiper-slide"><img src="images/banner4.jpg"></div>
-                        <div class="swiper-slide"><img src="images/banner5.jpg"></div>
+                        <div class="swiper_active_bg"></div>
                     </div>
-                    <!-- Add Pagination -->
                 </div>
-                <div class="swiper-pagination"></div>
-            </div>           
-        </div>
-
-    </div>
-    <!--footer下载-->
-    <!-- <div class="footer_download">
-        <div class="footer_download_content">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="0.4693333333333334rem" height="0.4693333333333334rem" class="button-icon_62244">
-                <path fill="#3a3a3a" d="M494.931 324.274c-4.514-0.012-8.849 1.808-12.050 5.060s-5.006 7.671-5.019 12.285v121.535h-443.727v-121.535c-0.013-4.613-1.818-9.031-5.018-12.285s-7.535-5.073-12.049-5.060c-4.514-0.012-8.849 1.808-12.050 5.060s-5.006 7.671-5.019 12.285v138.904c0 9.552 7.651 17.345 17.069 17.345h477.863c4.514 0.012 8.849-1.808 12.050-5.060s5.006-7.671 5.019-12.285v-138.904c-0.012-4.613-1.818-9.031-5.019-12.285s-7.535-5.073-12.050-5.060zM182.634 242.609l56.297 69.404v-280.442c0-9.632 7.642-17.441 17.069-17.441s17.069 7.808 17.069 17.441v279.776l55.762-68.74c4.329-4.423 10.637-6.15 16.55-4.531s10.531 6.338 12.115 12.379c1.584 6.042-0.106 12.487-4.435 16.91l-84.364 104c-3.428 3.464-8.139 5.271-12.952 4.966-4.82 0.305-9.538-1.5-12.976-4.966l-84.364-104c-4.328-4.423-6.019-10.869-4.434-16.911s6.203-10.761 12.115-12.379c5.912-1.619 12.221 0.108 16.549 4.531z"></path></svg>
-                <span class="down"></span>立即下载</span>
             </div>
-     </div> -->
+        </div> -->
 
-   <div class="float-bricks"><div brick-index="93644b9b94404ba9" class="float-frame_e4927 float-brick" style="width: 9.33333rem; height: 1.12rem; left: 0.333333rem; bottom: 0rem;"><div class="frame-event_70026 frame-event-bind"><div brick-index="93644b9b94404ba9" class="brick-button_ea982" style="color: rgb(58, 58, 58); border-color: rgb(68, 68, 68); border-width: 0.0266667rem; border-radius: 0.56rem; background-color: rgb(255, 255, 255);"><div class="button-content_8b431"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="0.4693333333333334rem" height="0.4693333333333334rem" class="button-icon_62244"><path fill="#3a3a3a" d="M494.931 324.274c-4.514-0.012-8.849 1.808-12.050 5.060s-5.006 7.671-5.019 12.285v121.535h-443.727v-121.535c-0.013-4.613-1.818-9.031-5.018-12.285s-7.535-5.073-12.049-5.060c-4.514-0.012-8.849 1.808-12.050 5.060s-5.006 7.671-5.019 12.285v138.904c0 9.552 7.651 17.345 17.069 17.345h477.863c4.514 0.012 8.849-1.808 12.050-5.060s5.006-7.671 5.019-12.285v-138.904c-0.012-4.613-1.818-9.031-5.019-12.285s-7.535-5.073-12.050-5.060zM182.634 242.609l56.297 69.404v-280.442c0-9.632 7.642-17.441 17.069-17.441s17.069 7.808 17.069 17.441v279.776l55.762-68.74c4.329-4.423 10.637-6.15 16.55-4.531s10.531 6.338 12.115 12.379c1.584 6.042-0.106 12.487-4.435 16.91l-84.364 104c-3.428 3.464-8.139 5.271-12.952 4.966-4.82 0.305-9.538-1.5-12.976-4.966l-84.364-104c-4.328-4.423-6.019-10.869-4.434-16.911s6.203-10.761 12.115-12.379c5.912-1.619 12.221 0.108 16.549 4.531z"></path></svg><span class="text-ellipsis_5e241" style="font-size: 0.426667rem;">立即下载</span></div></div></div></div><div class="agreements--"><div class="v-portal" style="display: none;"></div></div></div> 
-
-<script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
-<script type="text/javascript" src="js/swiper.min.js"></script>
-<script type='text/javascript'  src="js/qiehuan.js"></script>
+        <div class="part5_wrap">
+        <div class="part5_ts">
+              <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+             <!-- Add Arrows -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-container part5_container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img src="images/banner1.jpg"><div class="abs"></div></div>
+                  <div class="swiper-slide"><img src="images/banner2.jpg"><div class="abs"></div></div>
+                  <div class="swiper-slide"><img src="images/banner3.jpg"><div class="abs"></div></div>
+                </div>                      
+              </div>
+        </div>
+    </div>
+        <div class="part5_ts_btn">
+            <a href="https://forum.gamer.com.tw/A.php?bsn=71693" target="_blank"><img src="images/game_btn_BA.png" alt=""></a>
+            <a href="https://www.facebook.com/SlashBrave.TW" target="_blank"><img src="images/game_btn_FB_01.png" alt=""></a>
+            <a href="https://www.facebook.com/groups/slashbrave/" target="_blank"><img src="images/game_btn_FB_02.png" alt=""></a>
+        </div>
+    </div>
+    <!--part6 -->  
+    <div class="part6" id="pro6" ><img src="images/part6_title.jpg"></div>
+    <div class="part6_center">
+        <table border="0" align="center" cellpadding="0" cellspacing="0">
+            <thead>
+            <tr>
+              <td width="150" align="center" valign="middle" class="t1">達成日期</td>
+              <td width="190" align="center" valign="middle" class="t1">獎勵名稱</td>
+              <td width="350" align="center" valign="middle" class="t1">領獎序號</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td width="150" align="center" valign="middle" class="t2">2020/04/20</td>
+              <td width="190" align="center" valign="middle" class="t2">預約禮包</td>
+              <td width="350" align="center" valign="middle" class="t2"><span class="td_text">jihihljilko256874</span><span class="copy_btn"><a href="#">複製序號</a></span></td>
+            </tr>
+            <tr>
+              <td width="150" align="center" valign="middle" class="t2">2020/04/20</td>
+              <td width="190" align="center" valign="middle" class="t2"> 成功邀請1人禮包</td>
+              <td width="350" align="center" valign="middle" class="t2"><span class="td_text">未符合條件</span><span class="copy_btn"><a href="#">複製序號</a></span></td>
+            </tr>
+             <tr>
+              <td width="150" align="center" valign="middle" class="t2">2020/04/20</td>
+              <td width="190" align="center" valign="middle" class="t2"> 成功邀請3人禮包</td>
+              <td width="350" align="center" valign="middle" class="t2"><span class="td_text">未符合條件</span><span class="copy_btn"><a href="#">複製序號</a></span></td>
+            </tr>
+            <tr>
+              <td width="150" align="center" valign="middle" class="t2">2020/04/20</td>
+              <td width="190" align="center" valign="middle" class="t2"> 成功邀請5人禮包</td>
+              <td width="350" align="center" valign="middle" class="t2"><span class="td_text">EFE9300004CC89QTW</span><span class="copy_btn"><a href="#">複製序號</a></span></td>
+            </tr>
+          </tbody>
+          </table>
+    </div>
+    <div class="part6_tip"><P>虛寶領取兌換方式：遊戲內點擊左下角【設置】，選擇【序號】功能，輸入兌換碼後，即可領取虛寶獎勵。</P></div>
+     <!--part7 -->  
+  	<div  class="part part7">
+        <!-- <div class="container">
+            <div class="text_nei">
+            	 <p>非台灣地區玩家請輸入電子信箱。</p>
+                 <p>獎勵道具皆為綁定，每組序號僅限於OB上線後使用一次，OB上線時間依據官方公告時間為準。</p>
+                 <p>每個Facebook帳號、手機號碼、電子信箱，僅限參加活動一次。</p>
+                 <p>活動虛寶僅限Android系統兌換，建議iOS用戶透過Android裝置手機進行兌換。</p>
+                 <p>每一個遊戲帳號，僅限同一角色、同一伺服器兌換各組序號一次。</p>
+                 <p>若手機號碼或電子信箱等資料輸入錯誤，導致序號無法發送，恕不補發。</p>
+                 <p>實體贈品獎勵將於活動結束後統一寄送，煩請密切留意領獎通知簡訊，中獎者可至上方獎勵查詢
+                區查詢。</p>
+                 <p>主辦單位將以電子信箱與手機簡訊主動通知實體獎得獎者；得獎者需於收到通知5天內回覆領獎憑證
+             
+                ，方可獲得贈品，逾期視同放棄領獎資格。</p>
+                 <p>統一於收回領據後寄出贈品，得獎者若於當月份30日前尚未收到獎品，煩請主動通知主辦單位，逾
+                期視同放棄領獎資格。</p>
+                 <p>主辦單位將依據得獎者所留存之地址做贈品寄送，若因資料不全導致無法寄件成功，將視同放棄領
+                獎權利。</p>
+                 <p>本活動獎項以實物為準，限得獎者本人領取，且不得要求折抵現金、轉讓他人領獎或兌換其他獎項
+                或優惠。</p>
+                 <p>機票之使用期限請依票據上載明為主，若有疑問請洽航空公司客服。</p>
+                 <p>依稅法規定，得獎價值超過新台幣1,000元以上者，需繳交身分證影本報稅使用，贈品價值超過新
+                台幣20,000元以上，依法須負擔10%機會中獎稅，並於次年度寄發所得稅扣(免)繳憑單；若非中華
+                民國國境內居住之國人(即在中華民國境內居住未達183天之本國人及外國人)，不論得獎人所得之
+                金額，須就中獎所得扣繳20%機會中獎稅，扣繳稅款未超過2,000元免扣繳(外籍人士不適用)；未滿
+                14歲之兒童中獎，視同監護人中獎，由監護人代為領取。</p>
+                 <p>主辦單位保留變更或終止本活動之權利，變更內容將於活動網站調整，恕不另行通知。</p>
+            </div>
+        </div> -->
+    </div> 
+      <!--fooer -->  
+    <div class="footer">
+        <div class="footer_container">
+            <div class="footer_links">
+                <a href="mailto:slashbrave.tw@gmail.com?subject=《斜槓勇者》聯繫客服">聯繫客服</a><em>|</em><a href="terms.html" target="_blank">服務條款</a><em>|</em>
+                <a href="privacy.html" target="_blank">隱私權政策</a>
+            </div>
+            <div class="footer_tip">
+                <p><img src="images/footer_03.png"></p>
+                <p>·本遊戲內容涉及性（輕微裸露）、暴力、虛擬戀愛或結婚，依遊戲軟體分級管理辦法
+                    分類為輔12級。 <br/>
+                  ·本遊戲為免費遊戲，但遊戲內另提供購買虛擬遊戲幣、物品等付費服務，請依個人興             
+                    趣及能力進行適度消費。 <br/>
+                  ·請注意遊戲時間，避免沉迷，長時間進行遊戲，容易影響作息，宜適度休息及運動。
+                  </p>
+            </div>
+            <div class="footer_bq">
+                <p>Copyright © MagicHouse Interactive Entertainment Co., LTD., All Rights Reserved.</p>
+            </div>
+        </div>
+    </div>  
+    <!--top_index -->               
+     <div id="gotop">TOP</div>  
+</div>
 <script>
-    //商店图轮播
-    var swiper = new Swiper('.img_swiper', {
-            loop : true,
-            
-            pagination: {
-                clickable: true,
-                el: '.swipera .swiper-pagination',
-            },
-    });
-    /*part3--角色*/
-    var roleswiper = new Swiper('.roles_wrap', {
-        loop : true,
-        effect : 'fade',
-        on: {
-        slideChangeTransitionStart:function(roleswiper){
-                var length = $(".game_roles .swiper_dock_list li").length;
-                $(".game_roles .swiper_dock_list li img").removeClass('on');
-                $(".game_roles .swiper_dock_list li img").eq((this.activeIndex-1)%length).addClass('on');
-            },
-        },
-    
-    });
-    $(".game_roles .swiper_dock_list li").click(function(){
-        var index = $(this).index()+1;
-        roleswiper.slideTo(index);
-        $(".game_roles .swiper_dock_list li img").removeClass('on');
-        $(".game_roles .swiper_dock_list li img").eq(index-1).addClass('on');
-    });
+    (function () {
+        var header = document.querySelector("#header");
+        var headroom = new Headroom(header, {
+          tolerance: {
+            down: 10,
+            up: 20
+          },
+          offset: 15
+        });
+        headroom.init();
+      })();
+      // select选择城市
+      function select(){
+        var keyCountry = $("#key-country option:selected").val();
+            if (keyCountry == '886') {
+                $("input[name='mobile']").attr('placeholder', '(例：0930000000)');
+            } else if (keyCountry == '852') {
+                $("input[name='mobile']").attr('placeholder', '(例：91011111)');
+            } else if (keyCountry == '853') {
+                $("input[name='mobile']").attr('placeholder', '(例：8111111)');
+            } 
+            else if (keyCountry == '65') {
+                $("input[name='mobile']").attr('placeholder', '(例：81234567)');
+            } 
+            else if (keyCountry == '60') {
+                $("input[name='mobile']").attr('placeholder', '(例：1234567890)');
+            } 
 
- </script>
-<script>
-
-    /* 邮箱正则 ：id是全局唯一的，不需要获取元素，直接使用*/
-    let re = /^\w+(?:\.\w+){0,1}@[a-zA-Z0-9]{2,14}(?:\.[a-z]{2,4}){1,2}$/;
-
-    //绑定文本输入时触发的事件
-    $('#text0,#text1').oninput = function() {
-
-        let textBox = this.value;
-
-        //判断检测这个值是否正确，
-        if (re.test(textBox)) { //如果验证正确执行以下代码
-            $('.notice').innerHTML = '邮箱验证成功';
-            $('.notice').style.color = 'plum';
-        } else { //验证成功，执行以下代码
-            $('.notice').innerHTML = '邮箱验证不成功，请重新输入';
-            $('.notice').style.color = 'green';
-        }
-    }
+      }
     </script>
 </body>
 </html>
