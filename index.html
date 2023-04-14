@@ -1,358 +1,607 @@
 ﻿<!DOCTYPE html>
 <html>
+
 <head>
-	<meta charset="utf-8">
-    <meta content="yes" name="apple-mobile-web-app-capable" />
-    <meta content="black" name="apple-mobile-web-app-status-bar-style" />
-    <meta content="telephone=no" name="format-detection" />
-    <meta content="email=no" name="format-detection" />
-    <title>《斜槓勇者》事前預約開放中！潮流系放置捲軸手遊！挑戰你的多重冒險新人生！</title>
-    <meta name="keywords" content="斜槓勇者,手機遊戲,手遊,遊戲,事前登錄,事前預約,預約,橫向捲軸,放置">
-    <meta name="description" content="《斜槓勇者》開啟你的勇者冒險日記！打造全新斜槓人生！就是這麼好玩！ ">
-    <!--FB meta og: FB分享貼文-->
-    <meta name="og:description" content="《斜槓勇者》開啟你的勇者冒險日記！打造全新斜槓人生！就是這麼好玩"/>
-    <meta property="og:site_name" content="《斜槓勇者》事前預約開放中！潮流系放置捲軸手遊！挑戰你的多重冒險新人生！"/>
-    <meta property="og:title" content="立即預約送限量時裝和自拍架，再抽PS5和萬元現金！"/>
-    <meta property=“og:url” content="(需更換成玩家分享的專屬網址)"/>
-    <meta property="og:image" content="(需更換為FB分享圖片隨機3張)"/>
-    <link rel="shortcut icon" href="favicon.ico" />
-	<link rel="stylesheet" href="css/phone_main.css" type="text/css" media="screen" />
-    <link rel="stylesheet" href="css/swiper.min.css">
-    <script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
-    <script type="text/javascript"  src="js/swiper.min.js"></script>
-    <script type="text/javascript" src="js/lunbo_index.js"></script>
-    <script src="js/headroom1.js"></script> 
-	<!--浏览器兼容HTML5标签-->
-	<!--[if lt IE 9]>
-		<script type="text/javascript" src="/js/html5.js"></script>
-	<![endif]-->
-	<!--移动端版本兼容 -->
-	<script type="text/javascript">
-		var phoneWidth =  parseInt(window.screen.width);
-		var phoneScale = phoneWidth/750;
-		var ua = navigator.userAgent;
-		if (/Android (\d+\.\d+)/.test(ua)){
-			var version = parseFloat(RegExp.$1);
-			if(version>2.3){
-				document.write('<meta name="viewport" content="width=750, minimum-scale = '+phoneScale+', maximum-scale = '+phoneScale+', target-densitydpi=device-dpi">');
-			}else{
-				document.write('<meta name="viewport" content="width=750, target-densitydpi=device-dpi">');
-			}
-		} else {
-			document.write('<meta name="viewport" content="width=750, user-scalable=no, target-densitydpi=device-dpi">');
-		}
-	</script>
-
-<!-- Google Analytics代碼for斜槓勇者-->
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-194429494-2"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-194429494-2');  gtag('config', 'AW-377339352');
-</script>
-
-<!-- Facebook像素碼for斜槓勇者預約頁-->
-<!-- Facebook Pixel Code -->
-<script>
-    !function(f,b,e,v,n,t,s)
-    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-    n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];
-    s.parentNode.insertBefore(t,s)}(window, document,'script',
-    'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '207572504577816');
-    fbq('track', 'PageView');
-    </script>
-    <noscript><img height="1" width="1" style="display:none"
-    src="https://www.facebook.com/tr?id=207572504577816&ev=PageView&noscript=1"
-    /></noscript>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link href="css/swiper.min.css" rel="stylesheet">
+  <link href="css/animate.min.css" rel="stylesheet">
+  <link href="css/common.css" rel="stylesheet">
+  <link href="css/colorbox.css" rel="stylesheet">
+  <title>カバラの伝説</title>
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <link rel="shortcut icon" href="images/favicon.ico"/>
 </head>
-<body>
-<div id="wrapper">
-    <!--第一屏 --> 
-      <!--彈窗-->
-      <div class="masked" id="masked"></div>
-      <div class="tc_success" id="tc_succes"> 
-          <div class="girl"><img src="images/tc_img_06.png" alt=""></div>
-          <div class="girl_hand"><img src="images/tc_hand.png" alt=""></div>
-          <div class="tc_main">
-              <!--關閉按鈕-->
-              <div class="closed"><img src="images/tc_close.png" alt=""></div>
-              <div class="tc_tip"><img src="images/tc_img_03.png" alt=""></div>
-               <!--隐藏的gg按钮-->
-              <!-- <div class="tc_store">
-                <a href="https://lihi1.com/Q8F6n" target="_blank"><img src="images/tc_btn_android.png"/></a>
-             </div> -->
-              <div class="tc_store">
-                  <a href="https://lihi1.com/sYG0E" target="_blank"><img src="images/tc_btn_ios.png"/></a>
-              </div>
-              <div class="tc_sure">
-                  <a href="#"><img src="images/tc_btn_window.png"/> </a>
-              </div>
-       </div>   
-      </div>
-      
-       <!--header-->
-      <div class="wrap_header headroom"  id="header">
-          <div class="header_content">
-              <div class="header_ico"><img src="images/header_ico.png" alt=""></div>
-                 <!--隐藏的gg按钮-->
-              <!-- <div class="header_gg"> <a href="https://lihi1.com/Q8F6n" target="_blank"><img src="images/header_gg.png" alt=""></a></div> -->
-              <div class="header_gg"> <a href="https://lihi1.com/sYG0E" target="_blank"><img src="images/header_ios.png" alt=""></a></div>
-              <div class="header_fb"> <a href="https://www.facebook.com/SlashBrave.TW" target="_blank"><img src="images/header_fb.png" alt=""></a></div>
-              
-          </div>
-      </div> 
-     <!--part1 -->  
-    <div class="part part1">
-        <div class="logo"><a  href="https://www.facebook.com/SlashBrave.TW" target="_blank"><img src="images/part1_logo.png"/></a></div>
-       <div class="btn-reservation"> <p>999999</p> </div>            
-    </div>
-    <!--part2 -->  
-    <div class="part part2" id="pro2">
-        <div class="zan">
-            <!-- <p><img src="images/part2_booking_btn_FB_like.png"></p> -->
-            <p ><img src="images/fb_login.png"></p>
-        </div> 
-        <div class="info-box">
-            <select class="area" id="key-country" onchange="select()">
-            <option value="886">台灣+886</option>
-            <option value="852">香港+852</option>
-            <option value="853">澳門+853</option>
-            <!-- <option value="65">新加坡+65</option>
-            <option value="60">馬來西亞+60</option> -->
-            </select>
-            <input type="tel" class="input-in" oninput="value=value.replace(/[^\d]/g,'')" placeholder="(例：0930000000)" id="mobile" name="mobile">
-        </div>
-        <div class="login_btn sure_btn" id="sure_btn"><a href="javascript:void(0)"><img src="images/part2_booking_btn_01.png"></a></div>
-        <div class="chaxun_btn" id="five"><a href="#"><img src="images/part2_booking_btn_02.png"></a></div> 
-           <!--隐藏的gg按钮-->
-        <!-- <div class="part2_store">
-            <a href="https://lihi1.com/sYG0E" target="_blank"><img src="images/part2_gg.png"></a>
-        </div> -->
-        <div class="part2_store">
-            <a href="https://lihi1.com/Q8F6n" target="_blank"><img src="images/part2_ios.png"></a>
-        </div>
-       
-        <div class="part2_sd">
-            <a href="#" target="_blank"><img src="images/part2_sd.png"></a>
-        </div>   
-	</div>    
 
+<body>
+<!--蒙层--> 
+<div class="masked" id="masked"></div>
+<!--email弹窗-->
+<div class="part1_tc_email scale-up-center" id="tc_succes_big" style="display: none;"> 
+  <div class="tc_email_bg">
+    <div class="closed"><img src="images/tc_closed.png" alt=""></div>
+    <div class="email_wrap">
+      <div class="email_input" >
+        <P><input name="mobile" type="text"  class="email_content" value=""/></P>
+      </div>
+      <div class="email_btn">
+        <a href="javascript:void(0)"><img src="images/part1_tc_btn.png"></a>
+      </div>
+    </div>
+  </div>   
+</div> 
+<!--点击応募する对应弹窗-->
+<div class="part3_tc_success scale-up-center"  style="display: none;"> 
+  <div class="part3_tc_bg">
+    <div class="closed"><img src="images/tc_closed.png" alt=""></div>
+    <div class="part3_tc_content">
+      <a href="https://apps.apple.com/jp/app/カバラの伝説/id1641477143" target="_blank"><img src="images/part3_zm_ios.png" alt=""></a>
+      <a href="https://play.google.com/store/apps/details?id=com.arkgames.ggplay.tlonjp" target="_blank"><img src="images/part3_zm_gg.png" alt=""></a>
+    </div>
+  </div>   
+</div> 
+<!--footer对应弹窗-->
+<div class="footer_tc_tip scale-up-center"  style="display: none;"> 
+  <div class="footer_tip_bg">
+    <div class="closed"><img src="images/tc_closed.png" alt=""></div>
+  </div>   
+</div> 
+<!--点击首屏幕弹窗内按钮-->
+<div class="part1_tc_denglu scale-up-center"  style="display: block;"> 
+  <div class="part1_tc_denglu_bg">
+    <div class="closed"><img src="images/tc_closed.png" alt=""></div>
+    <div class="part3_tc_content">
+      <a href="https://apps.apple.com/jp/app/カバラの伝説/id1641477143" target="_blank"><img src="images/part3_zm_ios.png" alt=""></a>
+      <a href="https://play.google.com/store/apps/details?id=com.arkgames.ggplay.tlonjp" target="_blank"><img src="images/part3_zm_gg.png" alt=""></a>
+    </div>
+  </div>   
+</div> 
+<!--导航栏--> 
+<div class="nav_box">
+  <div class="nav_box_main">
+      <div class="nav_top">
+          <div class="nav_logo"><img src="images/nav_logo.png"></div>
+          <div class="closed"><img src="images/menu_closed.png"></div>
+      </div> 
+      <div class="nav_btn">
+          <div class="nav_link">
+              <div class="link01  active link"><a href="index.html" target="_blank">トップ  </a></div>
+              <div class="link02 link news"><a href="javascript:void(0)">予約特典  </a></div>
+              <div class="link03 link characters"><a href="javascript:void(0)">CBT募集 </a></div>
+              <div class="link05 link flower"><a href="javascript:void(0)">最新情報 </a></div>
+              <div class="link06 link features"><a href="javascript:void(0)">キャラクター </a></div>
+              <div class="link07 link features"><a href="javascript:void(0)">花精霊</a></div>
+              <div class="link link_ico">
+                <a href="#"><img src="images/nav_twitter.png" alt=""></a>
+                <a href="#"><img src="images/nav_email.png" alt=""></a>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+<!--menu--> 
+  <div class="common_menu"><img src="images/part1_menu.png"></div>
+<!--主体内容--> 
+<div class="swiper-container swiper-fullscreen">
+  <div class="swiper-wrapper">
+      <!--part1-->
+    <div class="swiper-slide slide1" data-hash="slide01">
+    <div class="main_show">
+      <div class="part1_masked"></div>
+      <div class="part1_closed" style="display: none;"><img src="images/part1_video_closed.png"></div>
+         <!-- <video id="video1" x5-video-player-type="h5-page" x5-playsinline="true" webkit-playsinline playsinline muted autoplay loop class="bgvideo video bg-video" >
+          <source src="media/main.mp4" type="video/mp4">
+        </video >  -->
+              <!-- <video x5-video-player-type="h5-page" x5-playsinline="true" webkit-playsinline="" playsinline="" muted="" autoplay="" loop="" class="bgvideo video bg-video">
+          <source src="media/main.mp4" type="video/mp4">
+      </video> -->
+        <video data-v-a379813c="" poster="" loop="loop" playsinline="" src="media/main.mp4" autoplay="autoplay" preload="auto" id="video1"  class="bgvideo video bg-video" ></video>
   
-  	<!--part3 -->  
-  	<div class="part part3" id="pro3">
-        <div class="ma_download2">
-            <a href="#">複製網址</a>
+        <div class="part1_wrap">
+          <div class="part1_video_btn ani"  swiper-animate-effect="fadeInDown" swiper-animate-duration="0.5s" swiper-animate-delay="0.24s">
+            <div class="part1_video_play" id="playbtn"><div><span></span></div></div> 
+          </div>
+            <div class="part1_logo ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.15s"><img src="images/part1_logo.png"></div>
+            <div class="part1_down"><img src="images/part1_down_row.png"></div>
+            <h1 class=" part1_btn_cbt ani" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.5s" swiper-animate-delay="0.84s" >
+              <img src="images/part1_img_cbt.png" alt="">
+            </h1>
+            <div class="part_four_btn">
+              <div class="part1_btn ani" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.5s" swiper-animate-delay="0.34s">
+                <a href="https://apps.apple.com/jp/app/カバラの伝説/id1641477143" target="_blank"><img src="images/part1_btn_ios.png" alt=""></a>
+                <a href="https://play.google.com/store/apps/details?id=com.arkgames.ggplay.tlonjp" target="_blank"><img src="images/part1_btn_gg.png" alt="" style="margin-right:0rem;"></a>
+              </div>
+              <div class="part1_btn ani" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.5s" swiper-animate-delay="0.44s">
+                <a href="https://twitter.com/Cabala_JP" target="_blank"><img src="images/part1_btn_twitter.png" alt="" style="margin-right:0rem;"></a>
+                <!-- <span class="part1_email_link"><img src="images/part1_btn_email.png" alt="" class="btn_last"></span> -->
+              </div>
+            </div>
+          </div>
+      </div>
+
+  </div>
+    <!--part2-->
+    <div class="swiper-slide slide2" data-hash="slide02">
+    <div class="main_show">
+      <div class="dc_wrap">
+        <div class="part2_slogen ani"  swiper-animate-effect="fadeInDown" swiper-animate-duration="0.5s" swiper-animate-delay="0s"><img src="images/part2_title.png"></div>
+        <div class="dc_bg">
+          <div class="dc_50_hover dc ani"   swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.5s" swiper-animate-delay="0.15s" >
+            <img src="images/part2_dc_img_hover1.png"></div>
+          <div class=" dc_100_hover dc ani"   swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.5s" swiper-animate-delay="0.25s">
+            <img src="images/part2_dc_img_hover1.png">
+          </div>
+          <div class=" dc_130_hover dc ani"  swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.5s" swiper-animate-delay="0.35s">
+            <img src="images/part2_dc_img_hover1.png">
+            </div>
         </div>
-        <div class="input2">
-            <p class="text" >https://slash.rocketeer.com.tw/pre-order/?utm_source=12345678901234567890&amp;utm_medium=12345678901234567890&amp;utm_campaign=pre-order&amp;s-code=8b1a9953c4611296a827abf8c47804d7 </p>
-            <p   style="display: none;" class="img"><img src="images/fb_login.png"></p> 
+        <div class="dc_bg">
+          <div class=" dc_160_hover dc ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="0.5s" swiper-animate-delay="0.45s">
+            <img src="images/part2_dc_img_hover1.png">
+            </div>
+          <div class=" dc_180_hover dc_t ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="0.5s" swiper-animate-delay="0.55s">
+            <img src="images/part2_dc_img_hover2.png">
+            </div> 
+            <div class=" dc_200_hover dc_t ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="0.5s" swiper-animate-delay="0.65s">
+              <img src="images/part2_dc_img_hover2.png">
+            </div> 
         </div>
-        <div class="da_cheng01"><img src="images/part3_invite_btn_invite_1_friend_yes.png"></div>
-        <div class="da_cheng02"><img src="images/part3_invite_btn_invite_1_friend_no.png"></div>
-        <div class="da_cheng03"><img src="images/part3_invite_btn_invite_1_friend_no.png"></div>
-        <div class="people_num"><p>目前已成功邀請 2 位朋友完成預約</p></div>
+      </div>
     </div>
-    <!--part4 -->
-    <div class="part part4" id="pro4">
-        <div class="part4_num"><p>655,986</p></div>
-        <div class="da_cheng01_line"><img src="images/part4_invite2_0w.png"></div>
+  </div>
+    <!--part3-->
+  <div class="swiper-slide slide3" data-hash="slide03">
+    <div class="main_show">
+      <div class="register_content">
+        <div class="part3_cbt_title ani" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.5s" swiper-animate-delay="0.1s"><img src="images/part3_cbt_title.png"></div>
+        <div class="ios_tab ani" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.5s" swiper-animate-delay="0.2s">
+          <lable class="one gg"><span class="input_style radio_bg radio_bg_check"><input type="radio" name="type" value="and" checked="checked"></span><strong class="red"><img src="images/part3_ico_gg.png"></strong></lable>
+          <lable class="one ios"><span class="input_style radio_bg"><input type="radio" name="type" value="ios"></span><strong><img src="images/part3_ico_ios.png"></strong></lable>
+        </div>
+      <div class="register_input ani" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">
+          <p><input name="mobile" type="text" class="text_content1" value=""></p>
+      </div>
+      <div class="register_checkbox_tip ani" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.5s" swiper-animate-delay="0.4s">
+        <p>
+          <input type="checkbox" id="checkbox1">
+          <a href="privacy.html" target="_blank"><img src="images/part3_cbt_checktip_img1.png" class="part3_link_privacy"></a>
+          <img src="images/part3_cbt_checktip_img2.png" class="part3_cbt_checktip_img2">
+        </p>  
+      </div>
+      <div class="register_btn ani" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.5s" swiper-animate-delay="0.5s">
+        <a href="javascript:void(0)"><img src="images/part3_register_btn.png"></a> 
+      </div>
     </div>
-     <!--part5 -->  
-    <div class="part part5" id="pro5">
-        <!-- <div class="swiper-slide slide7" data-hash="slide07">
-            <div class="slide7_main">
-                <div class="content">
-                    <div class="img">
-                        <div class="swiper-container box3">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <a href="#" data-url="http://www.youtube.com/embed/H9zBXsx6aQM">
-                                        <div class="img1">
-                                            <img src="images/banner1.jpg" alt="" />
-                                        </div>
-                                        <div class="abs">
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="swiper-slide">
-                                    <a href="#" data-url="http://www.youtube.com/embed/H9zBXsx6aQM">
-                                        <div class="img1">
-                                        </div>
-                                        <div class="abs">
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="swiper-slide">
-                                    <a href="#" data-url="http://www.youtube.com/embed/OeHb2WVWb5I">
-                                        <div class="img1">
-                                            <img src="images/banner1.jpg" alt="" />
-                                        </div>
-                                        <div class="abs">
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="swiper-button-next"></div>
-                            <div class="swiper-button-prev"></div>
-                        </div>
-                        <div class="swiper_active_bg"></div>
+    
+  </div>  
+  </div>
+    <!--part4-->
+    <div class="swiper-slide slide4" data-hash="slide04">
+    <div class="main_show">
+      <div class="part4_title ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.5s" swiper-animate-delay="0.1s"><img src="images/part4_title.png" alt=""></div>
+     
+      
+      <div class="part4_content_bg ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="0.5s" swiper-animate-delay="0.2s">
+        <div class="scrollwrap">
+        <div class="swiper-container scrollone">
+          <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <h3>■実施概要</h3>
+            <P>カバラの伝説の正式サービスに先立ち、第2次クローズドβテスト（以下、CBT2）を実施いたします。</P>
+            <P>冒険者の皆様、是非ご協力をお願いいたします。</P>
+            <P>正式サービス開始に向け、ゲームの改善を目的としたクローズドβテストを実施いたします。</P>
+            <P>プレイされた皆さまからのご意見・ご感想を元に、</P>
+            <P>さらなる品質向上に努めてまいりますので、ぜひご協力をお願いいたします。</P>
+            <P>皆様のご参加をお待ちしております。</P>
+            <h5>※ご登録いただく情報の取り扱いについてはプライバシーポリシーをご確認ください。</h5>
+            <h6>・募集人数：<span>1000名</span></h6> 
+            <h5>※　第1次クローズドβテストに参加して頂いた方々は優先的に抽選されます。</h5>
+            <h6>・募集期間：<span>2022年11月21日（月曜日）～2022年11月29日（火曜日）</span>）</h6> 
+            <h6>・当選発表：<span>2022年11月30日（水曜日）</span></h6> 
+            <h6>・開催期間（暫定）：<span>2022年12月1日（木曜日）～2022年12月08日（木曜日）</span></h6> 
+            <h5>※当選者の方へは10:00以降に順次、登録メールアドレス宛にご連絡いたします。</h5>
+            <h6>・推奨動作環境：</h6> 
+            <P>iOS：13.0以降 iPhone 8以降 (システムメモリ2GB以上)の端末</P>
+            <P>Android バージョン 7.0+以上(システムメモリ4GB以上)の端末をお持ちの方。</P>
+            <P>Googleアカウントとそれに紐付けられているメールアドレスをお持ちの方。</P>
+            <h5>※応募の際は、上記に該当するメールアドレスをご入力ください。</h5>
+            <h3>■参加規約</h3>
+            <P>・CBTへの参加手順は、当選メールに記載予定です。当選メールに記載された内容は、第三者へ公開または共有しないようご注意ください。</P>
+            <P>・期間内に募集人数を超える応募があった場合、抽選で参加者を決定いたします。</P>
+            <P>・応募の際には予め、「Neverland_jp@arkgames.net」からのメールを受信できるように設定をお願いします。</P>
+            <P>・クローズドβテストのプレイデータは正式サービスには引き継がれません。</P>
+            <P>・クローズドβテストでは有償通貨の購入はできません。</P>
+            <P>・クローズドβテストの開催期間および内容は予告なく変更する場合があります。</P>
+            <P>・期間中は、予告なく緊急メンテナンスを実施する場合があります。</P>
+            <P>・使用できない機能や正式サービスとは内容が異なる箇所があります。</P>
+            <P>・他者への権利譲渡等によるトラブルには一切対応できませんので、ご注意ください。</P>
+            <P>・CBTに関わるすべての権利は、Ark Games GLOBAL PTE. LTDに帰属するものとします。</P>
+            <P>・ご登録いただく情報の取り扱いについてはプライバシーポリシーをご確認ください。</P>
+            <P>・CBTの詳細につきましては募集期間終了からCBT開始までの間に、ご登録いただいたメールアドレス宛にご連絡いたします。なお、応募者多数の場合は抽選となり、当選された方のみご案内をお送りいたします。</P>
+            <h3>■iOSをご利用のお客様へ</h3>
+            <P>クローズドβテストでは「カバラの伝説」のテスト用アプリのほか、Apple社の「TestFlight」アプリを使用します。</P>
+            <P>登録されたメールアドレスあてに「TestFlight」利用に関するメールを送信しますので、あらかじめ「@email.apple.com」からのメールを受信できるよう、必ず設定をお願いいたします。「TestFlight」のメールを受信できない場合、CBT用アプリのインストールができず、クローズドβテストへ参加できない可能性があります。SMS/MMSでは当選メールを正常に受信できない場合があります。</P>
+            <P>必ずSMS/MMS以外で受信できるメールアドレスをご登録ください。</P>
+          </div>
+          </div>
+          <!-- Add Scroll Bar -->
+          <div class="swiper-scrollbar"></div>
+        </div>
+        </div>
+      </div>
+  
+      
+  </div>  
+  </div>
+    <!--part5-->
+    <div class="swiper-slide slide5" data-hash="slide05">
+    <div class="main_show">
+      <div class="part5_title"><img src="images/part5_title.png"></div>
+      <div class="news_swiper ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="0.5s" swiper-animate-delay="0.1s">
+        <div class="part5_kuang_top"><img src="images/part5_news_top_kuang.png"></div>
+        <div class="part5_kuang_left"><img src="images/part5_news_left_kuang.png"></div>
+        <div class="part5_kuang_right"><img src="images/part5_news_right_kuang.png"></div>
+        <div class="part5_kuang_bottom"><img src="images/part5_news_bottom_kuang.png"></div>
+        <div class="swiper-pagination"></div>
+        <div class="swipera cf">
+          <div class="swiper-container img_swiper">
+              <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img src="images/part5_news_left_img1.jpg"></div>
+                  <div class="swiper-slide"><img src="images/part5_news_left_img2.jpg"></div>
+                  <div class="swiper-slide"><img src="images/part5_news_left_img3.jpg"></div>
+              </div>
+              <!-- Add Pagination -->
+          </div>
+        </div>
+      </div>   
+        <div class="news_box ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.5s" swiper-animate-delay="0.2s">
+          <div class="news_biaoti"> <a href="content.html"></a><img src="images/part5_news_title.png"></a></div>
+          <div class="news_list">
+            <ul>
+              <li>
+              <a href="content.html">
+                <p class="news_title">この花と樹の世を、守りたこの花と樹の世を、守りたい </p> </a>
+                <p class="news_date"><img src="images/part5_news_right_ico.png"></p>
+              </li>
+              <li>
+                <a href="content.html">
+                  <p class="news_title">この花と樹の世を、守りたいこの花と樹の世を、守りたいこの花と樹の世を、守りたい</p>  </a>
+                  <p class="news_date"><img src="images/part5_news_right_ico.png"></p>
+              </li>
+              <li>
+                <a href="content.html">
+                  <p class="news_title">この花と樹の世を、守りた この花と樹の世を、守りたい</p>  </a>
+                  <p class="news_date"><img src="images/part5_news_right_ico.png"></p>
+              </li>
+              <li>
+                <a href="content.html">
+                  <p class="news_title">この花と樹の世を、守りたこの花と樹の世を、守りたい </p>  </a>
+                  <p class="news_date"><img src="images/part5_news_right_ico.png"></p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div> 
+    <!--part6-role-->    
+    <div class="swiper-slide slide6" data-hash="slide06">
+      <div class="main_show">
+        <div class="part6_title"><img src="images/part6_title.png"></div>
+        <div class="game_roles">
+            <div class="swiper-container roles_wrap">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="role_info role_info1">
+                        <img src="images/part6_text_xz.png">
+                      </div>
+                      <div class="role_img1 role_img"></div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="role_info role_info2">
+                        <img src="images/part6_text_gj.png">
+                      </div>
+                      <div class="role_img2 role_img"></div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="role_info role_info3">
+                        <img src="images/part6_text_gjs.png">
+                      </div>
+                      <div class="role_img3 role_img"></div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="role_info role_info4">
+                        <img src="images/part6_text_zs.png">
+                      </div>
+                      <div class="role_img4 role_img"></div>
                     </div>
                 </div>
             </div>
-        </div> -->
-
-        <div class="part5_wrap">
-        <div class="part5_ts">
-              <!-- Add Pagination -->
-            <div class="swiper-pagination"></div>
-             <!-- Add Arrows -->
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-container part5_container">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide"><img src="images/banner1.jpg"><div class="abs"></div></div>
-                  <div class="swiper-slide"><img src="images/banner2.jpg"><div class="abs"></div></div>
-                  <div class="swiper-slide"><img src="images/banner3.jpg"><div class="abs"></div></div>
-                </div>                      
+            <div class="dock_list">
+            <ul class="swiper_dock_list">
+                <li > 
+                  <a href="javascript:void(0)"><img class="icon on" src="images/part6_ico_hover1.png"/></a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)"><img class="icon " src="images/part6_ico_hover2.png"/></a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)"><img class="icon" src="images/part6_ico_hover3.png"/></a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)"><img class="icon" src="images/part6_ico_hover4.png"/></a>
+                </li>
+            </ul>
+            </div>
+        </div>   
+      </div>
+    </div>
+    <!--part8_role_Character-->
+    <div class="swiper-slide slide7" data-hash="slide07">
+      <div class="main_show">
+        <div class="part7_title"><img src="images/part7_title.png"></div>
+        <div class="role">
+            <div class="part8_menu">
+              <div class="list">
+                <div class="swiper-container part8_swiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="images/part7_flower_ct.png" /></div>
+                    <div class="swiper-slide"><img src="images/part7_flower_jzh.png" /></div>
+                    <div class="swiper-slide"><img src="images/part7_flower_sly.png" /></div>
+                    <div class="swiper-slide"><img src="images/part7_flower_yjc.png" /></div>
+                    <div class="swiper-slide"><img src="images/part7_flower_jg.png" /></div>
+                    <div class="swiper-slide"><img src="images/part7_flower_sl.png" /></div>
+                    <div class="swiper-slide"><img src="images/part7_flower_zyh.png" /></div>
+                    <div class="swiper-slide"><img src="images/part7_flower_sc.png" /></div>
+                  </div>
+                </div>
               </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+          </div>
+          <dl class="content_tro">
+          
+              <!--刺桐-->
+            <dd><img src="images/part7_img_ct.png" class="role_people"/></dd>
+            <!--金盏花-->
+            <dd><img src="images/part7_img_jzh.png" class="role_people"/></dd>
+              <!-- 十六夜-->
+            <dd><img src="images/part7_img_sly.png" class="role_people"/></dd>
+              <!--月见草-->
+            <dd><img src="images/part7_img_yjc.png" class="role_people"/></dd>
+            <!--桔梗-->
+            <dd><img src="images/part7_img_jg.png" class="role_people"/></dd>
+            <!--睡莲-->
+            <dd><img src="images/part7_img_sl.png" class="role_people"/></dd>
+              <!--紫阳花-->
+            <dd><img src="images/part7_img_zyh.png" class="role_people"/></dd>
+            
+              <!--山茶cuowu-->
+            <dd><img src="images/part7_img_sc.png" class="role_people"/></dd>
+        </dl>
         </div>
     </div>
-        <div class="part5_ts_btn">
-            <a href="https://forum.gamer.com.tw/A.php?bsn=71693" target="_blank"><img src="images/game_btn_BA.png" alt=""></a>
-            <a href="https://www.facebook.com/SlashBrave.TW" target="_blank"><img src="images/game_btn_FB_01.png" alt=""></a>
-            <a href="https://www.facebook.com/groups/slashbrave/" target="_blank"><img src="images/game_btn_FB_02.png" alt=""></a>
+  </div> 
+  <!--part8-footer-->
+  <div class="swiper-slide slide8" data-hash="slide08" style="height:8.8rem;">
+    <div class="main_show1">
+      <div class="footer">
+        <div class="footer_btn">
+          <a href="https://apps.apple.com/jp/app/カバラの伝説/id1641477143" target="_blank"><img src="images/part8_footer_ios.png"></a>
+          <a href="https://play.google.com/store/apps/details?id=com.arkgames.ggplay.tlonjp" target="_blank"><img src="images/part8_footer_gg.png"></a>
         </div>
-    </div>
-    <!--part6 -->  
-    <div class="part6" id="pro6" ><img src="images/part6_title.jpg"></div>
-    <div class="part6_center">
-        <table border="0" align="center" cellpadding="0" cellspacing="0">
-            <thead>
-            <tr>
-              <td width="150" align="center" valign="middle" class="t1">達成日期</td>
-              <td width="190" align="center" valign="middle" class="t1">獎勵名稱</td>
-              <td width="350" align="center" valign="middle" class="t1">領獎序號</td>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td width="150" align="center" valign="middle" class="t2">2020/04/20</td>
-              <td width="190" align="center" valign="middle" class="t2">預約禮包</td>
-              <td width="350" align="center" valign="middle" class="t2"><span class="td_text">jihihljilko256874</span><span class="copy_btn"><a href="#">複製序號</a></span></td>
-            </tr>
-            <tr>
-              <td width="150" align="center" valign="middle" class="t2">2020/04/20</td>
-              <td width="190" align="center" valign="middle" class="t2"> 成功邀請1人禮包</td>
-              <td width="350" align="center" valign="middle" class="t2"><span class="td_text">未符合條件</span><span class="copy_btn"><a href="#">複製序號</a></span></td>
-            </tr>
-             <tr>
-              <td width="150" align="center" valign="middle" class="t2">2020/04/20</td>
-              <td width="190" align="center" valign="middle" class="t2"> 成功邀請3人禮包</td>
-              <td width="350" align="center" valign="middle" class="t2"><span class="td_text">未符合條件</span><span class="copy_btn"><a href="#">複製序號</a></span></td>
-            </tr>
-            <tr>
-              <td width="150" align="center" valign="middle" class="t2">2020/04/20</td>
-              <td width="190" align="center" valign="middle" class="t2"> 成功邀請5人禮包</td>
-              <td width="350" align="center" valign="middle" class="t2"><span class="td_text">EFE9300004CC89QTW</span><span class="copy_btn"><a href="#">複製序號</a></span></td>
-            </tr>
-          </tbody>
-          </table>
-    </div>
-    <div class="part6_tip"><P>虛寶領取兌換方式：遊戲內點擊左下角【設置】，選擇【序號】功能，輸入兌換碼後，即可領取虛寶獎勵。</P></div>
-     <!--part7 -->  
-  	<div  class="part part7">
-        <!-- <div class="container">
-            <div class="text_nei">
-            	 <p>非台灣地區玩家請輸入電子信箱。</p>
-                 <p>獎勵道具皆為綁定，每組序號僅限於OB上線後使用一次，OB上線時間依據官方公告時間為準。</p>
-                 <p>每個Facebook帳號、手機號碼、電子信箱，僅限參加活動一次。</p>
-                 <p>活動虛寶僅限Android系統兌換，建議iOS用戶透過Android裝置手機進行兌換。</p>
-                 <p>每一個遊戲帳號，僅限同一角色、同一伺服器兌換各組序號一次。</p>
-                 <p>若手機號碼或電子信箱等資料輸入錯誤，導致序號無法發送，恕不補發。</p>
-                 <p>實體贈品獎勵將於活動結束後統一寄送，煩請密切留意領獎通知簡訊，中獎者可至上方獎勵查詢
-                區查詢。</p>
-                 <p>主辦單位將以電子信箱與手機簡訊主動通知實體獎得獎者；得獎者需於收到通知5天內回覆領獎憑證
-             
-                ，方可獲得贈品，逾期視同放棄領獎資格。</p>
-                 <p>統一於收回領據後寄出贈品，得獎者若於當月份30日前尚未收到獎品，煩請主動通知主辦單位，逾
-                期視同放棄領獎資格。</p>
-                 <p>主辦單位將依據得獎者所留存之地址做贈品寄送，若因資料不全導致無法寄件成功，將視同放棄領
-                獎權利。</p>
-                 <p>本活動獎項以實物為準，限得獎者本人領取，且不得要求折抵現金、轉讓他人領獎或兌換其他獎項
-                或優惠。</p>
-                 <p>機票之使用期限請依票據上載明為主，若有疑問請洽航空公司客服。</p>
-                 <p>依稅法規定，得獎價值超過新台幣1,000元以上者，需繳交身分證影本報稅使用，贈品價值超過新
-                台幣20,000元以上，依法須負擔10%機會中獎稅，並於次年度寄發所得稅扣(免)繳憑單；若非中華
-                民國國境內居住之國人(即在中華民國境內居住未達183天之本國人及外國人)，不論得獎人所得之
-                金額，須就中獎所得扣繳20%機會中獎稅，扣繳稅款未超過2,000元免扣繳(外籍人士不適用)；未滿
-                14歲之兒童中獎，視同監護人中獎，由監護人代為領取。</p>
-                 <p>主辦單位保留變更或終止本活動之權利，變更內容將於活動網站調整，恕不另行通知。</p>
+        <div class="footer_line"></div>
+        <div class="footer_icon">
+          <img src="images/part8_footer_icon.png">
+        </div>
+        <div class="footer_line"></div>
+        <div class="footer_bottom_wrap">
+            <div class="footer_notice_link">
+              <ul>
+                <li><a href="privacy.html" target="_blank">プライバシーポリシー</a></li>
+                <li><a href="rule.html" target="_blank">利用規則</a></li>
+                <li><a href="teding.html" target="_blank">特定商取引法</a></li>
+              </ul>
             </div>
-        </div> -->
-    </div> 
-      <!--fooer -->  
-    <div class="footer">
-        <div class="footer_container">
-            <div class="footer_links">
-                <a href="mailto:slashbrave.tw@gmail.com?subject=《斜槓勇者》聯繫客服">聯繫客服</a><em>|</em><a href="terms.html" target="_blank">服務條款</a><em>|</em>
-                <a href="privacy.html" target="_blank">隱私權政策</a>
-            </div>
-            <div class="footer_tip">
-                <p><img src="images/footer_03.png"></p>
-                <p>·本遊戲內容涉及性（輕微裸露）、暴力、虛擬戀愛或結婚，依遊戲軟體分級管理辦法
-                    分類為輔12級。 <br/>
-                  ·本遊戲為免費遊戲，但遊戲內另提供購買虛擬遊戲幣、物品等付費服務，請依個人興             
-                    趣及能力進行適度消費。 <br/>
-                  ·請注意遊戲時間，避免沉迷，長時間進行遊戲，容易影響作息，宜適度休息及運動。
-                  </p>
-            </div>
-            <div class="footer_bq">
-                <p>Copyright © MagicHouse Interactive Entertainment Co., LTD., All Rights Reserved.</p>
+            <div class="footer_notice_link">
+              <ul>
+                <li><a href="zijin.html" target="_blank">資金決済法</a></li>
+                <li><a href="javascript:void(0)" class="footer_tc_link">お問い合わせ</a></li>
+                <li><a class="footer_index">サイトトップ</a></li>
+                
+              </ul>
             </div>
         </div>
-    </div>  
-    <!--top_index -->               
-     <div id="gotop">TOP</div>  
+        <div class="footer_line"></div>
+        <div class="footer_logo"><img src="images/part8_footer_ag_logo.png"></div>
+      </div>
+    </div>
+  </div> 
 </div>
-<script>
-    (function () {
-        var header = document.querySelector("#header");
-        var headroom = new Headroom(header, {
-          tolerance: {
-            down: 10,
-            up: 20
-          },
-          offset: 15
-        });
-        headroom.init();
-      })();
-      // select选择城市
-      function select(){
-        var keyCountry = $("#key-country option:selected").val();
-            if (keyCountry == '886') {
-                $("input[name='mobile']").attr('placeholder', '(例：0930000000)');
-            } else if (keyCountry == '852') {
-                $("input[name='mobile']").attr('placeholder', '(例：91011111)');
-            } else if (keyCountry == '853') {
-                $("input[name='mobile']").attr('placeholder', '(例：8111111)');
-            } 
-            else if (keyCountry == '65') {
-                $("input[name='mobile']").attr('placeholder', '(例：81234567)');
-            } 
-            else if (keyCountry == '60') {
-                $("input[name='mobile']").attr('placeholder', '(例：1234567890)');
-            } 
+</div>
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/swiper.min.js"></script>
+<script src="js/qiehuan.js"></script>
+<script src="js/swiper.animate1.0.3.min.js"></script>
+<script src="js/input.js"></script>
+<script src="js/jquery.colorbox.js"></script>
+  <script>
+ $(document).ready(function () {
+  $('body').height($('body')[0].clientHeight);
+});
 
+ /*全屏*/
+ var Mainswiper = new Swiper('.swiper-fullscreen', {
+  direction: 'vertical',
+  slidesPerView: 'auto',
+  mousewheel: true,
+  // pagination: {
+  //   el: '.swiper-pagination',
+  //   clickable: true,
+  //   renderBullet: function (index, className) {
+  //     return '<span class="' + className + '">0' + (index + 1) + '</span>';
+  //   },
+  // },
+  on: {
+    init: function () {
+      swiperAnimateCache(this); //隐藏动画元素 
+      swiperAnimate(this); //初始化完成开始动画
+    },
+    slideChangeTransitionEnd: function () {
+      swiperAnimate(this); //每个slide切换结束时也运行当前slide动画
+
+    },
+  },
+
+});
+
+/*part6--role*/
+var roleswiper = new Swiper('.roles_wrap', {
+    loop : true,
+    autoplay:true,
+    effect : 'fade',
+    on: {
+      slideChangeTransitionStart:function(roleswiper){
+            var length = $(".game_roles .swiper_dock_list li").length;
+            $(".game_roles .swiper_dock_list li img").removeClass('on');
+            $(".game_roles .swiper_dock_list li img").eq((this.activeIndex-1)%length).addClass('on');
+        },
+    },
+   
+});
+$(".game_roles .swiper_dock_list li").click(function(){
+    var index = $(this).index()+1;
+    roleswiper.slideTo(index);
+    $(".game_roles .swiper_dock_list li img").removeClass('on');
+    $(".game_roles .swiper_dock_list li img").eq(index-1).addClass('on');
+});
+ /*part4-cbt内容*/ 
+var swiperone = new Swiper('.scrollone', {
+			direction: 'vertical',
+			slidesPerView: 'auto',
+			freeMode: true,
+			scrollbar: {
+			el: '.swiper-scrollbar',
+			//	hide: true,
+			},
+			mousewheel: true,
+});
+ /*part5-news轮播图*/ 
+ var swiper22 = new Swiper('.img_swiper', {
+      loop : true,
+      pagination: {
+          clickable: true,
+          el: '.slide5 .swiper-pagination',
+      },
+      
+      on: {
+          resize: function () {
+                  setTimeout(function(){
+                    swiper22.update()
+                  },500)
+              
+              },
       }
-    </script>
+});
+
+//part1--视频弹窗
+$(function(){
+    $(".video1").colorbox({iframe:true, innerWidth:"80%", innerHeight:"30%"});	
+})
+//文字滚动时，禁止全屏滚动
+$(function () {
+    $('.scrollone').hover(function () {
+      Mainswiper.mousewheel.disable();
+    }, function () {
+      Mainswiper.mousewheel.enable();
+    })
+}) 
+$(function(){
+  //点击menu弹出菜单栏
+$('body').on("click", '.common_menu', function () {
+  $('.nav_box').toggleClass('active')
+});
+$('body').on("click", '.nav_box .closed', function () {
+  $('.nav_box').removeClass('active')
+});
+  /*侧边栏链接对应屏幕*/
+  $('.link01,.footer_index').click(function(){
+    Mainswiper.slideTo(0);
+    $('.nav_box').removeClass('active');
+    $(this).addClass('active').siblings('div').removeClass('active');
+  });
+  $('.link02,.part1_btn_cbt').click(function(){
+      Mainswiper.slideTo(1);
+      $('.nav_box').removeClass('active');
+      $(this).addClass('active').siblings('div').removeClass('active');
+  });
+  $('.link03').click(function(){
+      Mainswiper.slideTo(2);
+      $('.nav_box').removeClass('active');
+      $(this).addClass('active').siblings('div').removeClass('active');
+  });
+
+  $('.link05').click(function(){
+      Mainswiper.slideTo(4);
+      $('.nav_box').removeClass('active');
+      $(this).addClass('active').siblings('div').removeClass('active');
+  });
+
+  $('.link06').click(function(){
+      Mainswiper.slideTo(5);
+      $('.nav_box').removeClass('active');
+      $(this).addClass('active').siblings('div').removeClass('active');
+  });
+
+  $('.link07').click(function(){
+      Mainswiper.slideTo(6);
+      $('.nav_box').removeClass('active');
+      $(this).addClass('active').siblings('div').removeClass('active');
+  });
+  document.documentElement.addEventListener('touchstart', function (event) {
+  if (event.touches.length > 1) {
+    event.preventDefault();
+  }
+}, false);
+
+var lastTouchEnd = 0;
+document.documentElement.addEventListener('touchend', function (event) {
+  var now = Date.now();
+  if (now - lastTouchEnd <= 300) {
+    event.preventDefault();
+  }
+  lastTouchEnd = now;
+}, false);
+})
+
+$("video").prop('muted', true);
+  $('body').on("click", '.part1_video_play', function () {
+    
+        $("video").prop('muted', false);
+   
+      $(' .header').css('display','none');
+      $('.part1_wrap').css('display','none');
+      $('.part1_closed').css('display','block');
+      $('.part1_masked').css('display','none');
+
+
+
+    });
+ 
+        //点关闭符号关闭
+        $('.part1_closed').on("click", function () {
+        $("video").prop('muted', true);
+
+          $(' .header').css('display','block');
+          $('.part1_masked').css('display','block');
+          $('.part1_wrap').css('display','block');
+          $('.part1_closed').css('display','none');
+       
+        });
+
+
+
+</script>
 </body>
 </html>
-
-
